@@ -1,20 +1,12 @@
-# Symbiote Learning App - RAG-based QA Engine
+# RAG-based QA Engine
 
 A sophisticated Retrieval-Augmented Generation (RAG) system designed to provide precise answers based on a curated knowledge base (e.g., WWII history). This project features a robust **NestJS (Fastify)** backend and a modern **Next.js** frontend.
-<<<<<<< HEAD
 
 
 
+https://github.com/user-attachments/assets/8164a96a-9411-483f-96e7-511c85776111
 
 
-
-
-
-
-
-=======
-<video src="./rag-qa-engine/images/demo.mp4" controls="controls" style="max-width: 100%;"></video>
->>>>>>> e32fe05 (feat: add evaluation pipeline)
 ## Project Overview
 
 The system implements a complete RAG pipeline:
@@ -113,7 +105,7 @@ Process the collected data and store it in Qdrant:
 ```bash
 pnpm ingest
 ```
-<img src="./rag-qa-engine/images/ingestion.png" alt="Description" width="400">
+<img src="./rag-qa-engine/images/ingestion.png" alt="Description" width="600">
 
 ### Step 3: Start the Backend
 ```bash
@@ -126,7 +118,7 @@ Assess the performance of the RAG system:
 pnpm evaluate
 ```
 This script runs predefined test cases and returns an evaluation compared against ground truth (evaluation/results).
-<img src="./rag-qa-engine/images/evaluation.png" alt="evaluation" width="400">
+<img src="./rag-qa-engine/images/evaluation.png" alt="evaluation" width="600">
 
 
 ### Step 5: Start the Frontend
@@ -153,7 +145,7 @@ Access the app at `http://localhost:3000`.
 
 ### Query Rewriting
 - Automatically transforms follow-up questions (e.g., "What about the Battle of Midway?") into self-contained search queries based on the conversation history to improve retrieval accuracy.
-<img src="./rag-qa-engine/images/rewriting.png" alt="Description" width="400">
+<img src="./rag-qa-engine/images/rewriting.png" alt="Description" width="600">
 
 
 ### Session & History Management
